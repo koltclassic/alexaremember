@@ -1,0 +1,312 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css"/>
+
+</head>
+<style>
+
+@-webkit-keyframes arrow-jump {
+  0%   { opacity: 0;}
+  100% { opacity: 1; 
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -0-transform: translateY(10px);
+    transform: translateY(10px);
+    }  
+}
+.scroll-down-arrow, .scroll-down-arrow2, .scroll-down-arrow3 {
+	/*transform: scale(0.1,0.1);*/
+	width: 10%;
+	height: 10%;
+  -webkit-animation: arrow-jump 2s infinite;
+  -moz-animation:    arrow-jump 2s infinite;
+  -o-animation:      arrow-jump 2s infinite;
+  animation:         arrow-jump 2s infinite;
+}
+
+.scroll-down-arrow.off, .scroll-down-arrow2.off, .scroll-down-arrow3.off {
+	-moz-animation-name: none;
+	-webkit-animation-name: none;
+	-ms-animation-name: none;
+		animation-name: none;	
+	}
+
+body {
+	background-color: #5595FC;
+	font-family: Cabin;
+	overflow: none;
+}
+
+h2, h4, h5 {
+	color: #fff;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-primary {
+	background: #5595FC;
+	border: 1px solid #fff;
+}
+
+.btn-primary:hover {
+	background: #fff;
+	color: #5595FC;
+	border: 1px solid #5595FC;
+}
+
+.btn:disabled {
+	opacity: 1;
+	padding: 3px 5px 3px 5px;
+}
+
+.content {
+	padding-top: 15%;
+}
+
+#chart1 {
+	margin-bottom: 50px;
+}
+
+.ipsum {
+	text-align: center;
+}
+
+.ipsum .btn {
+	margin: 5px;
+}
+
+.samplephoto {
+	width: 250px;
+	object-fit: scale-down;
+}
+
+</style>
+
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 content" style="text-align: center;">
+			<img class="img-responsive" src="remember1.png" />
+			<br>
+			<h4>Remember is an Amazon Alexa skill to find your lost items. </h4>
+			<br>
+			<!-- <button type="button" class="btn btn-primary btn-lg">Begin!</button>
+			-->
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4 class="arrowtext">Begin!</h4>
+			<img class="scroll-down-arrow" src="ios7-arrow-down.svg"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 graph">
+			<div id="chart1" style="width:100%; height:250px;padding-top: 60px;">
+			    <div><img class="sliderpic samplephoto" src="stockdesk1.jpeg" /></div>
+			    <div class="ipsum sliderpic">
+			    		<h5>8:30 AM</h5>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">laptop</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">plant</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">notebook</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">pen</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">coffee</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">arm</button>
+			    </div>
+			    <div><img class="sliderpic samplephoto" src="stockdesk2.jpeg" />
+			    </div>
+			    <div class="ipsum sliderpic">
+			    		<h5>8:45 AM</h5>
+			    		<button type="button" class="btn btn-lg btn-primary" disabled="disabled">chair</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">t-square</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">notebook</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">pen</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">table</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">paper</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">wallet</button>
+			    </div>
+			    <div><img class="sliderpic samplephoto" src="stockdesk3.jpeg" />
+			    </div>
+			    <div class="ipsum sliderpic">
+			    		<h5>8:52 AM</h5>
+			    		<button type="button" class="btn btn-lg btn-primary" disabled="disabled">headphones</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">telephone</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">candle</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">laptop</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">chair</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">table</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">woman</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">man</button>
+			    </div>
+			    <div><img class="sliderpic samplephoto" src="stockdesk4.jpg" />
+			    </div>
+			    <div class="ipsum sliderpic">
+			    		<h5>9:10 AM</h5>
+			    		<button type="button" class="btn btn-lg btn-primary" disabled="disabled">tablet</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">glasses</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">keyboard</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">mouse</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">notebook</button>
+				    	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">wallet</button>
+			    </div>
+			</div>
+		</div>
+		<div class="col-md-12" style="text-align: center; margin-bottom: 200px;">
+			<h2>Remember uses the power of</h2>
+			<img src="clarifai.png" />
+			<h2>to spot items in your home that you may have forgotten</h2>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<img class="scroll-down-arrow2" src="ios7-arrow-down.svg" />
+		</div>
+	</div>
+	<div class="row" id="amazon" style="background-color: white; margin-bottom: 150px;">
+		<div class="col-md-6">
+			<h2 style="color: #5595FC; text-align: center;">Communicate with your</h2>
+			<img src="Amazon-Echo-Logo.png" />
+			<h2 style="color: #5595FC; text-align: center;">to receive the location of your lost items!</h2>
+		</div>
+		<div class="col-md-6" style="text-align: center;">
+			<img src="Amazon_Echo.jpg" style="width: 50%; height: 50%; object-fit: scale-down; max-height: 290px;"/>
+			<h3 style="color: #5595FC;">"Alexa, remember where I left my..."</h3>
+		</div>
+	</div>
+	<br>
+	<img class="scroll-down-arrow3" src="ios7-arrow-down.svg" />
+	<div class="row" id="contributors">
+		<div class="col-md-12" style="text-align: center; color: #fff">
+			<br>
+			<br>
+			<h2>Thank you for viewing our product!</h2>
+			<h4>Contributors: </h4>
+			<br>
+			<h3>Zachary Collins</h3>
+			<h4>Go / Raspberry Pi Development</h4>
+			<br>
+			<h3>Jeremy Karbowski</h3>
+			<h4>Go / Raspberry Pi Development</h4>
+			<br>
+			<h3>Abigael Onchiri</h3>
+			<h4>Amazon Echo Development</h4>
+			<br>
+			<h3>Kolt Ewing</h3>
+			<h4>Website Design / Development</h4>
+			<br>
+			<br>
+			<br>
+			<br>
+			<img class="bottomlogo" src="hand.svg" />
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/slick/slick/slick.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>	
+<script>
+
+$(document).ready(function() {
+
+$('.scroll-down-arrow').click(function(){
+	$('.arrowtext').fadeTo( 1000, 0 );
+	$('.scroll-down-arrow').addClass("off").animate({ opacity: 0 });
+
+$('html, body').animate({
+scrollTop: $("#chart1").offset().top
+}, 2000);
+
+});
+
+$('.scroll-down-arrow2').click(function(){
+	$('.scroll-down-arrow2').addClass("off").animate({ opacity: 0 });
+
+$('html, body').animate({
+scrollTop: $("#amazon").offset().top -110
+}, 2000);
+
+});
+
+$('.scroll-down-arrow3').click(function(){
+	$('.scroll-down-arrow3').addClass("off").animate({ opacity: 0 });
+
+$('html, body').animate({
+scrollTop: $("#contributors").offset().top
+}, 2000);
+
+});
+
+$('.bottomlogo').click(function(){
+	$('.arrowtext').fadeTo(0, 1000 );
+	$('.scroll-down-arrow, .scroll-down-arrow2, .scroll-down-arrow3').removeClass("off").animate({ opacity: 1 });
+
+$('html, body').animate({
+scrollTop: $(".container").offset().top
+}, 2000);
+
+});
+
+});
+
+window.onload = function(){
+      
+		$('#chart1').slick({
+		  infinite: true,
+		  slidesToShow: 2,
+		  arrows: false,
+		  slidesToScroll: 2,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		  responsive: [
+		  {
+      		breakpoint: 1024,
+      		settings: {
+        		slidesToShow: 2,
+        		slidesToScroll: 2,
+      			}
+    	  },
+    	  {	
+      		breakpoint: 600,
+      		settings: {
+        		slidesToShow: 2,
+        		slidesToScroll: 2,
+      			}
+    	  },
+		  {
+		  	breakpoint: 480,
+      		settings: {
+      			slidesToShow: 1,
+      			slidesToScroll: 1,
+      		}
+		  }
+		  ]
+		});
+		
+    };
+
+$('html').animate({scrollTop: 0}, 1);
+$('body').animate({scrollTop: 0}, 1);
+	
+</script>
+</body>
+</html>
